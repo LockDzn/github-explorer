@@ -29,13 +29,7 @@ const Repository = () =>  {
 
         console.log(issuesPage)
         
-        const response = await fetch(`https://api.github.com/repos/${owner}/${repository}/issues?page=${issuesPage}`, { 
-            method: 'get', 
-            headers: new Headers({
-              'Authorization': `token 5617e6b34d004bd9d5dc3c402dbdfe6bdf600231`, 
-              'Accept': 'application/vnd.github.v3+json'
-            })
-        });
+        const response = await fetch(`https://api.github.com/repos/${owner}/${repository}/issues?page=${issuesPage}`);
         const data: RepositoryIssuesEventProps[] = await response.json();
         setIssues(oldIssues => [...oldIssues, ...data]);
     }
