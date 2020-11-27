@@ -88,16 +88,15 @@ const Home = () => {
                     </a>
                 ))}
 
-                <a id="999" href="/teste" className={styles.listItem}>
+                <a href="https://github.com/LockDzn/github-explorer" className={styles.listItem}>
                     <div className={styles.itemHeader}>
                         <img src="https://avatars3.githubusercontent.com/u/28955729?v=4" alt="LockDzn profile photo"/>
-                        <h2>lockdzn/repo</h2>
+                        <h2>lockdzn/github-explorer</h2>
                     </div>
                     <p>Repositório desse projeto.</p>
                     <div className={styles.itemFooter}>
                         <div style={{ backgroundColor: '#2b7489' }}  className={styles.lang}></div>
                         <span>TypeScript</span>
-                        <span>&#x2B50; 5k</span>
                     </div>
                 </a>
 
